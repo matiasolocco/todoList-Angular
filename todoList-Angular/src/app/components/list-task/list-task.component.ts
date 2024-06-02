@@ -1,3 +1,4 @@
+import { Task } from '../../interfaces/task';
 import { TaskComponent } from './../task/task.component';
 import { Component, Input } from '@angular/core';
 
@@ -9,5 +10,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './list-task.component.css'
 })
 export class ListTaskComponent {
-
+  @Input () taskList!: Task[]
 }

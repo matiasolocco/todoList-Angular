@@ -1,5 +1,4 @@
 <div>
-    <input type="text" placeholder="Introduce una nueva tarea">
-    <button>➕
-    </button>
+    <input [(ngModel)]= "text" placeholder="Introduce una nueva tarea">
+    <button (click)="sendTask()" >➕</button>
 </div>

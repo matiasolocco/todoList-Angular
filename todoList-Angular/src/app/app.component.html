@@ -1,6 +1,8 @@
-<app-input-task></app-input-task>
+<app-input-task (onSendTask)="taskReceived($event)"></app-input-task>
 
-<app-list-task></app-list-task>
+<app-list-task [taskList]="taskList"></app-list-task>
+
+
 
 
 <router-outlet />
