@@ -1,3 +1,7 @@
 <div class="list">
-<app-task></app-task>
+<ul>
+    @for (task of taskList; track task){
+        <app-task [item]="task"></app-task>
+    }
+</ul>
 </div>

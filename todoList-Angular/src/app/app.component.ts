@@ -19,6 +19,7 @@ export class AppComponent {
  ]
 
  taskReceived (msg: string){
+  console.log('Task received')
   if (this.taskList.find( x => x.text === msg ) === undefined ){
     this.taskList.push({text: msg, state: false})
   }
